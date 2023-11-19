@@ -82,7 +82,9 @@ namespace IDA_C_sh_HomeWork
             // Считываем данные из movie.xml в movie_list
             List<Movie> movies_list = Movie.LoadDataFromXML(origin_data_filename);
 
-            //
+            // Экспиремент с универсальной коллекцией - попробую в ней хранить все полученные сортировки
+            // (а они будут разные: IEnumerable, IGroupable, int, double),
+            // чтобы потом сериализовать в JSON всем списком
             List<object> modified_views = new();
  
 
